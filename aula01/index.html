@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário - Atividade 01</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <head>
+    <h1>Formulário Cliente</h1>
+
+  </head>
+  <section id="section-page">
+    <form action="">
+      <div id="first-column">
+        <label for="nome">Nome:</label>
+        <input type="text">
+        <label for="telefone">Telefone:</label>
+        <input type="number">
+        <label for="email">E-mail:</label>
+        <input type="text">
+      </div>
+      <div>
+        <span>Selecione tipo de pessoa</span>
+        <select name="tipo" id="tipo_pessoa">
+          <option value="pf">Pessoa física</option>
+          <option value="pj">Pessoa jurídica</option>
+        </select>
+
+      </div>
+      <div id="second-column">
+        <label for="nome">Endereço:</label>
+        <input type="text">
+        <span>Selecione o estado:</span>
+        <select name="estado" id="estado">
+          <option value="sc">Santa Catarina</option>
+          <option value="to">Tocantins</option>
+        </select>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
