@@ -7,36 +7,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <head>
+  <header>
     <h1>Formulário Cliente</h1>
-
-  </head>
+  </header>
+  
   <section id="section-page">
+    
     <form action="">
       <div id="first-column">
-        <label for="nome">Nome:</label>
-        <input type="text">
-        <label for="telefone">Telefone:</label>
-        <input type="number">
-        <label for="email">E-mail:</label>
-        <input type="text">
-      </div>
-      <div>
-        <span>Selecione tipo de pessoa</span>
-        <select name="tipo" id="tipo_pessoa">
-          <option value="pf">Pessoa física</option>
-          <option value="pj">Pessoa jurídica</option>
-        </select>
+        <div class="form-element">
+          <label for="nome">Nome:</label>
+          <input name="nome" type="text">
+        </div>
+        <div class="form-element">
+          <label for="telefone">Telefone:</label>
+          <input name="telefone" type="number">
+        </div>
+        <div class="form-element">
+          <label for="email">E-mail:</label>
+          <input name="email" type="text">
+        </div>
+        <div class="form-element">
+          <span>Selecione tipo de pessoa</span>
+          <select name="tipo" id="tipo_pessoa">
+            <option value="pf">Pessoa física</option>
+            <option value="pj">Pessoa jurídica</option>
+          </select>
 
-      </div>
-      <div id="second-column">
-        <label for="nome">Endereço:</label>
-        <input type="text">
-        <span>Selecione o estado:</span>
-        <select name="estado" id="estado">
-          <option value="sc">Santa Catarina</option>
-          <option value="to">Tocantins</option>
-        </select>
+        </div>
+        <div class="form-element">
+          <label for="endereco">Endereço:</label>
+          <input name="endereco" type="text">
+        </div>
+        <div class="form-element">
+          <span>Selecione o estado:</span>
+          <select name="estado" id="estado">
+            <option value="sc">Santa Catarina</option>
+            <option value="to">Tocantins</option>
+          </select>
+        </div>
       </div>
     </form>
   </section>
