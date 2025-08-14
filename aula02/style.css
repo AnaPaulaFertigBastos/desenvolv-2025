@@ -1,0 +1,13 @@
+.title-header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+button {
+  width: 100px;
+}
