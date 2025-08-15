@@ -1,0 +1,67 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin: auto;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  justify-content: center; 
+}
+
+header h1 {
+  margin: 20px 0 20px 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 400px
+}
+
+.form-element input {
+  border: 1px solid #ccc;
+  padding:10px;
+}
+
+form {
+  display: flex;
+}
+
+button {
+  width: 80px;
+}
+
+#buttons-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#first-column{
+  display: flex;
+  flex-direction: column;
+}
+
+#section-page {
+  display: flex;
+  
+  margin: auto;
+  justify-content: center;
+}
+
+input {
+  height: 20px;
+  border-color: 1px rgb(204, 202, 202);
+}
