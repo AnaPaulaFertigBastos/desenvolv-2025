@@ -1,0 +1,91 @@
+.elemento-form {
+  display: block;
+  margin: 10px 0 10px 0;
+  border-bottom: 2px solid rgb(165, 209, 175);
+  max-width: 175px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(247, 227, 247);
+}
+
+.elemento-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.elemento-form input {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.select-form select {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #5c5252;
+  padding: 5px;
+}
+
+
+
+section {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  
+}
+
+section form {
+  border-radius: 6px;
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+  min-width: 310px;
+}
+
+
+fieldset {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1 {
+ text-align: center;
+ text-shadow: 3px 3px 1px rgb(165, 209, 175);
+}
+
+.container-form {
+  
+  display: flex;
+  margin: auto;
+}
+
+.elemento-form input {
+  border: #5c5252 solid 1px;
+}
+
+.button-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-form input {
+  background-color: rgb(165, 209, 175);
+  border: 1px solid rgb(82, 97, 86);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+
+.checkbox-item {
+  display: flex;
+}
+
+.required::after {
+  content: " *";
+  font-weight: bold;
+}
