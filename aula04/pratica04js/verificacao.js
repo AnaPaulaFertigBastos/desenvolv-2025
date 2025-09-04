@@ -1,5 +1,5 @@
-function verificarSenha(event) {
-  event.preventDefault();
+function verificarSenha() {
+  
   let user = document.getElementById("user").value;
   let senha = document.getElementById("senha").value;
 
