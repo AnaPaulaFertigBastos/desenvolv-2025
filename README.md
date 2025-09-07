@@ -11,6 +11,13 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
 - [Aula 1](#aula1)
     Clonamos o repositório localmente
 - [Aula 2](#aula2)
+    Estudamos como colocar conteúdos de mídia
+- [Aula 3](#aula3)
+    Praticamos o envio de formulários
+- [Aula 4](#aula4)
+    Revisamos JavaScript e CSS
+- [Aula 5](#aula5)
+    Praticamos cálculos e a manipulação do DOM pelo JavaScript
 
 ## Instalação
 Passos para instalar e configurar o projeto:
