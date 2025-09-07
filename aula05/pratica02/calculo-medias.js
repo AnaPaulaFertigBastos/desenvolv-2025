@@ -13,16 +13,22 @@ function mediaAlunos() {
 
   let thSoma = document.createElement("th");
   thSoma.classList.add("soma-media-aluno");
-  thSoma.textContent = "Total soma";
+  thSoma.textContent = "Soma Alunos";
   thSoma.rowSpan = 2;
 
   let thMedia = document.createElement("th");
   thMedia.classList.add("soma-media-aluno");
-  thMedia.textContent = "Média";
+  thMedia.textContent = "Média Alunos";
   thMedia.rowSpan = 2
+
+  let thSomaTotal = document.createElement("th");
+  thSomaTotal.classList.add("soma-media-aluno");
+  thSomaTotal.textContent = "Soma Total";
+  thSomaTotal.rowSpan = 2
   
   thead.querySelector("tr").appendChild(thSoma);
   thead.querySelector("tr").appendChild(thMedia);
+  thead.querySelector("tr").appendChild(thSomaTotal);
 
   let somaTotal = 0;
 
@@ -53,6 +59,12 @@ function mediaAlunos() {
     tdMediaAluno.textContent = mediaLinha;
     linha.appendChild(tdMediaAluno);
   }
+
+  let tdSomaTotal = document.createElement("td");
+  tdSomaTotal.classList.add("soma-media-aluno");
+  tdSomaTotal.textContent = somaTotal;
+  tdSomaTotal.rowSpan = 6;
+  linhas[0].appendChild(tdSomaTotal);
 
 }
 
@@ -89,24 +101,44 @@ function mediaNotas() {
     }
   }
 
+  let totalSomaColunas = somaColunas.reduce((acumulador, valor) => acumulador + valor, 0);
+
   let trSomas = document.createElement("tr")
   trSomas.classList.add("soma-media-nota");
 
   let trMedias = document.createElement("tr")
   trMedias.classList.add("soma-media-nota");
 
+  let trSomaTotal = document.createElement("tr")
+  trSomaTotal.classList.add("soma-media-nota");
+
+  //Td em negrito que apresenta a soma das notas
   let tdSomaExp = document.createElement("td");
   tdSomaExp.textContent = "Soma Notas";
   tdSomaExp.style.backgroundColor = "grey";
   tdSomaExp.style.fontWeight = "bold";
   trSomas.appendChild(tdSomaExp);
 
+  //Td em negrito que apresenta a média das notas
   let tdMediaExp = document.createElement("td");
   tdMediaExp.textContent = "Média Notas";
   tdMediaExp.style.backgroundColor = "grey";
   tdMediaExp.style.fontWeight = "bold";
   trMedias.appendChild(tdMediaExp);
 
+  //Td em negrito que apresenta a soma total
+  let tdSomaTotalExp = document.createElement("td");
+  tdSomaTotalExp.textContent = "Soma Total";
+  tdSomaTotalExp.style.backgroundColor = "grey";
+  tdSomaTotalExp.style.fontWeight = "bold";
+  trSomaTotal.appendChild(tdSomaTotalExp);
+
+  let tdSomaTotal = document.createElement("td");
+  tdSomaTotal.textContent = totalSomaColunas;
+  tdSomaTotal.colSpan = 9;
+  trSomaTotal.appendChild(tdSomaTotal);
+
+  //Td para cada nota
   somaColunas.forEach((soma, i) => {
     let tdSomaNota = document.createElement("td");
     tdSomaNota.textContent = soma;
@@ -116,8 +148,10 @@ function mediaNotas() {
     tdMediaNota.textContent = soma / qtdeColunas[i];
     trMedias.appendChild(tdMediaNota);
   })
+  
   tbody.appendChild(trSomas);
   tbody.appendChild(trMedias);
+  tbody.appendChild(trSomaTotal);
   
 }
 
