@@ -18,6 +18,7 @@ function soma(){
   let resultado = valor1 + valor2;
 
   document.getElementById("resultado").value = resultado;
+  document.getElementById("operacao").innerHTML = "+";
 }
 
 function subtracao(){
@@ -25,6 +26,7 @@ function subtracao(){
   let resultado = valor1 - valor2;
 
   document.getElementById("resultado").value = resultado;
+  document.getElementById("operacao").innerHTML = "-";
 }
 
 function multiplicacao(){
@@ -32,13 +34,18 @@ function multiplicacao(){
   let resultado = valor1 * valor2;
 
   document.getElementById("resultado").value = resultado;
+  document.getElementById("operacao").innerHTML = "x";
 }
 
 function divisao(){
   let [valor1, valor2] = getValor();
-  let resultado = valor1 / valor2;
+  let resultado = 0
+  if (valor2 != 0) {
+    resultado = valor1 / valor2;
+  }
 
   document.getElementById("resultado").value = resultado;
+  document.getElementById("operacao").innerHTML = "\u00F7";
 }
 
 function exponenciacao(){
@@ -46,6 +53,8 @@ function exponenciacao(){
   let resultado = valor1 ** valor2;
 
   document.getElementById("resultado").value = resultado;
+  document.getElementById("operacao").innerHTML = "^";
+
 }
 
 function definirCss() {

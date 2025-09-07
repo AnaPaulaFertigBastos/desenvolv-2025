@@ -1,3 +1,10 @@
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(58, 58, 58);
+  background-color: rgb(247, 246, 246);
+}
+
 .resultado-negativo {
   background-color: rgb(221, 126, 126);
 }
@@ -9,3 +16,78 @@
 .resultado-positivo {
   background-color: rgb(117, 192, 117);
 }
+
+#calculadora-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 500px;
+  
+}
+
+#valores-container {
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: white;
+}
+
+#calculadora-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+#escolha-valores-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#escolha-valores-container > div {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+
+#calculadora-container input {
+  border-radius: 2px;
+  border: 1px solid rgb(185, 185, 185);
+  padding: 5px 10px 5px 10px;
+  color: rgb(99, 98, 98);
+}
+
+#escolha-valores-container input {
+  max-width: 200px;
+}
+
+#operacoes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#operacoes button {
+  background-color: #6647EE;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#operacoes button:hover {
+  transform: scale(1.03);
+}
+
+#operacao {
+  font-size: 25px;
+  display: flex;
+  
+}
+
