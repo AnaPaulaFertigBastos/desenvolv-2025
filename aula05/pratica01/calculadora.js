@@ -52,19 +52,16 @@ function definirCss() {
   let resultado = parseFloat(document.getElementById("resultado").value);
   let inputResultado = document.getElementById("resultado");
 
+  inputResultado.classList.remove("resultado-negativo", "resultado-neutro", "resultado-positivo");
+
   if (resultado > 0) {
-    inputResultado.classList.remove("resultado-negativo");
-    inputResultado.classList.remove("resultado-neutro");
     inputResultado.classList.add("resultado-positivo");
   }
   else if (resultado < 0) {
-    inputResultado.classList.remove("resultado-positivo");
-    inputResultado.classList.remove("resultado-neutro");
+
     inputResultado.classList.add("resultado-negativo");
   }
   else {
-    inputResultado.classList.remove("resultado-positivo");
-    inputResultado.classList.remove("resultado-negativo");
     inputResultado.classList.add("resultado-neutro");
   }
 }
