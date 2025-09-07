@@ -1,0 +1,11 @@
+.resultado-negativo {
+  background-color: rgb(221, 126, 126);
+}
+
+.resultado-neutro {
+  background-color: rgb(194, 194, 194);
+}
+
+.resultado-positivo {
+  background-color: rgb(117, 192, 117);
+}

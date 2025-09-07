@@ -4,8 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prática 01 - Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="calculadora.js" defer></script>
 </head>
 <body>
-  
+  <h1>Calculadora</h1>
+  <fieldset>
+    <legend>Insira os valores</legend>
+    <label for="valor1">Valor 1:</label>
+    <input name="valor1" id="valor1" type="number" step="0.1">
+
+    <label for="valor2">Valor 2:</label>
+    <input name="valor2" id="valor2" type="number" step="0.1">
+
+    <hr>
+    
+    <button type="button" id="soma">Soma</button>
+    <button type="button" id="subtracao">Subtração</button>
+    <button type="button" id="multiplicacao">Multiplicação</button>
+    <button type="button" id="divisao">Divisão</button>
+    <button type="button" id="exponenciacao">Exponenciação</button>
+    <hr>
+    <label for="resultado">Resultado:</label>
+    <input type="number" name="resultado" id="resultado">
+  </fieldset>
 </body>
 </html>
