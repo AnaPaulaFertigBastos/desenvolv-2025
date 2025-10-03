@@ -18,8 +18,9 @@
   } catch(Exception $e) {
     exibirMensagem("Erro: " . $e->getMessage());
   } finally {
-    exibirMensagem("Processamento finalizado!");
+    exibirMensagem("Processamento finalizado!<br> ");
   }
   
+  exibirMensagem("Dados request " . print_r($_REQUEST));
 
 ?>
