@@ -1,17 +1,22 @@
 <?php 
   //passar via QueryString
 
-  $valor = $_REQUEST['valor'];
-  $desconto = $_REQUEST['desconto'];
+  // $valor = $_REQUEST['valor'];
+  // $desconto = $_REQUEST['desconto'];
+
+  $valor = isset($_REQUEST['valor']) ? $_REQUEST['valor'] : null;
+  $desconto = isset($_REQUEST['desconto']) ? $_REQUEST['desconto'] : null;
 
   function calcularDesconto($valor, $desconto) {
     $valorComDesconto = 0;
     try {
-      if (!is_numeric($valor)) {
+      
+
+      if (!is_numeric($valor) || !isset($valor)) {
         throw new Exception("Valor não é número");
       }
 
-      if (!is_numeric($desconto)) {
+      if (!is_numeric($desconto) || !isset($desconto)) {
         throw new Exception("Desconto não é número");
       }
 
