@@ -14,7 +14,16 @@
     echo "Início da Sessão: " . $_SESSION['inicio_sessao'] . "<br>";
     echo "Último acesso: " . $_SESSION['ultimo_acesso'] . "<br>";
 
-    echo "Tempo de sessão " . (strtotime($_SESSION['ultimo_acesso']) - strtotime($_SESSION['inicio_sessao'])) . " s";
+    $sessionTime = (strtotime($_SESSION['ultimo_acesso']) - strtotime($_SESSION['inicio_sessao']));
+    echo "Tempo de sessão " . $sessionTime  . " s";
+
+    if ($sessionTime > 1500) {
+      session_destroy();
+      echo "Sessão expirada. Faça login novamente. <br>";
+      echo '<a href="login.html">Login</a>';
+
+      
+    }
   }
 
 ?>
