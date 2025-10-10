@@ -21,8 +21,6 @@
       session_destroy();
       echo "Sessão expirada. Faça login novamente. <br>";
       echo '<a href="login.html">Login</a>';
-
-      
     }
   }
 
