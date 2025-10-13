@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular área</title>
+</head>
+<body>
+  <h1>Área do Triângulo</h1>
+  <form action="area.php" method="post">
+    <fieldset>
+      <legend>Insira a base e altura do triângulo, em metros</legend>
+      <ul>
+        <li>
+          <div>
+            <label for="base">Base:</label>
+            <input type="number" name="base" id="base" step="0.001" required>
+            <br>
+          </div>
+        
+        </li>
+        <li>
+          <div>
+            <label for="altura">Altura:</label>
+            <input type="number" name="altura" id="altura" step="0.001" required>
+            <br>
+          </div>
+        
+        </li>
+      </ul>
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Enviar">
+    </fieldset>
+  </form>
+</body>
+</html>
