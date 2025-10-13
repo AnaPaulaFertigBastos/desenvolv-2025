@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular área</title>
+</head>
+<body>
+  <h1>Área do quadrado</h1>
+  <form action="area.php" method="post">
+    <fieldset>
+      <legend>Insira o comprimento do lado do quadrado, em metros</legend>
+      <ul>
+        <li>
+          <div>
+            <label for="lado">Lado:</label>
+            <input type="number" name="lado" id="lado" step="0.001" required>
+            <br>
+          </div>
+        
+        </li>
+      </ul>
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Enviar">
+    </fieldset>
+  </form>
+</body>
+</html>
