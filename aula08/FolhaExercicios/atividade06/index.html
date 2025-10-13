@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado</title>
+</head>
+<body>
+  <h1>Mercado</h1>
+  <form action="mercado.php" method="post">
+    <fieldset>
+      <legend>Insira o valor e a quantidade</legend>
+      <table border="1">
+        <thead>
+          <th>Produto</th>
+          <th>Valor (R$)</th>
+          <th>Quantidade (kg)</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maçã</td>
+            <td>
+              <input type="number" name="valor[0]" id="maca-valor">
+            </td>
+            <td>
+              <input type="number" name="qtde[0]" id="maca-qtde">
+            </td>
+          </tr>
+          <tr>
+            <td>Melancia</td>
+            <td>
+              <input type="number" name="valor[1]" id="melancia-valor">
+            </td>
+            <td>
+              <input type="number" name="qtde[1]" id="melancia-qtde">
+            </td>
+          </tr>
+          <tr>
+            <td>Laranja</td>
+            <td>
+              <input type="number" name="valor[2]" id="laranja-valor">
+            </td>
+            <td>
+              <input type="number" name="qtde[2]" id="laranja-qtde">
+            </td>
+          </tr>
+          <tr>
+            <td>Repolho</td>
+            <td>
+              <input type="number" name="valor[3]" id="repolho-valor">
+            </td>
+            <td>
+              <input type="number" name="qtde[3]" id="repolho-qtde">
+            </td>
+          </tr>
+          <tr>
+            <td>Cenoura</td>
+            <td>
+              <input type="number" name="valor[4]" id="cenoura-valor">
+            </td>
+            <td>
+              <input type="number" name="qtde[4]" id="cenoura-qtde">
+            </td>
+          </tr>
+          <tr>
+            <td>Batatinha</td>
+            <td>
+              <input type="number" name="valor[5]" id="batata-valor">
+            </td>
+            <td>
+              <input type="number" name="qtde[5]" id="batata-qtde">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Comprar">
+    </fieldset>
+  </form>
+</body>
+</html>
