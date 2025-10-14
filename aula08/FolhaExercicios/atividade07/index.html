@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financiamento Carro</title>
+</head>
+<body>
+  <h1>Financiamento de Carro de Mariazinha</h1>
+  <form action="financiamento.php" method="post">
+    <fieldset>
+      <legend>Insira o valor do carro, a quantidade de parcelas financiadas e o valor de cada parcela</legend>
+      <ul>
+        <li>
+          <div>
+            <label for="valor_carro">Valor do carro:</label>
+            <input type="number" name="valor_carro" id="valor_carro" step="0.001" value="22500" required>
+            <br>
+          </div>
+        
+        </li>
+        <li>
+          <div>
+            <label for="qtde_parcelas">Parcelas:</label>
+            <input type="number" name="qtde_parcelas" id="qtde_parcelas" step="1" value="60" required>
+            <br>
+          </div>
+        
+        </li>
+        <li>
+          <div>
+            <label for="valor_parcela">Valor de cada parcela:</label>
+            <input type="number" name="valor_parcela" id="valor_parcela" step="0.001" value="489.65" required>
+            <br>
+          </div>
+        
+        </li>
+
+      </ul>
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Enviar">
+    </fieldset>
+  </form>
+</body>
+</html>
