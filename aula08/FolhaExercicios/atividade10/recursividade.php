@@ -11,16 +11,16 @@
     if (is_array($pasta)) {
       foreach($pasta as $elemento => $valor) {
         if (is_array($valor)) {
-          echo str_repeat("-", $nivel) . $elemento . "<br>";
+          echo str_repeat("- ", $nivel) . $elemento . "<br>";
           listarPastas($valor, $nivel + 1);
         } 
         else {
-          echo str_repeat("-", $nivel) . $valor . "<br>";
+          echo str_repeat("- ", $nivel) . $valor . "<br>";
         }
       };
     }
     else {
-      echo str_repeat("-", $nivel) . $pasta . "<br>";
+      echo str_repeat("- ", $nivel) . $pasta . "<br>";
     }
 
     
