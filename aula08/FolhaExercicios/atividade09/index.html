@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra de motos</title>
+</head>
+<body>
+  <h1>Compra de moto - juro composto</h1>
+  <form action="juros.php" method="post">
+    <fieldset>
+      <legend>Insira o valor da moto</legend>
+      <ul>
+        <li>
+          <div>
+            <label for="valor_moto">Valor da moto:</label>
+            <input type="number" name="valor_moto" id="valor_moto" step="0.001" value="8654" required>
+            <br>
+          </div>
+        </li>
+      </ul>
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Enviar">
+    </fieldset>
+  </form>
+</body>
+</html>
