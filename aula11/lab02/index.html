@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inserir Novas Pessoas</title>
+</head>
+<body>
+  <h1>Inserir Novas Pessoas</h1>
+  <form action="pessoas.php" method="post">
+    <fieldset>
+      <legend>Insira os dados da pessoa</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <br>
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" name="sobrenome" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      <br>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+      <br>
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" required>
+      <br>
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Inserir">
+    </fieldset>
+  </form>
+  
+</body>
+</html>

@@ -22,6 +22,17 @@
         throw new Exception("Falha na consulta à tabela tbpessoa.");
       }
 
+      $aDadosPessoa = array('Ana', 'Silva', 'ana@gmail.com', '12345', 'São Paulo', 'SP');
+
+      $resultInsert = pg_query_params($connection,
+        "INSERT INTO tbpessoa (pesnome, pessobrenome, pesemail, pespassword, pescidade, pesestado) VALUES ($1, $2, $3, $4, $5, $6)", 
+        $aDadosPessoa);
+
+      if ($resultInsert) {
+        echo "<br>Registro inserido com sucesso!";
+      } else {
+        throw new Exception("Falha ao inserir registro na tabela tbpessoa.");
+      }
     }
     else {
       throw new Exception("Falha na conexão com o banco de dados.");  
