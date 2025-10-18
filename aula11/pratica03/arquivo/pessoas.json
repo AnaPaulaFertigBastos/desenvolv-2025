@@ -1,0 +1,92 @@
+[
+    {
+        "pescodigo": 1,
+        "pesnome": "Ana",
+        "pessobrenome": "Paula",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$lsNQYjPl1OchKfxUZ61DQuajM6sRPCReXhsnz2NMbaSLPSb1rdfcm",
+        "pescidade": "Rio do Sul",
+        "pesestado": "AC"
+    },
+    {
+        "pescodigo": 2,
+        "pesnome": "Ana",
+        "pessobrenome": "Fertig",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$TdwcXlCqhYJlACcd9b5eUOM1CKEO23pBkZ6FT0WZTfcCz\/PXr3hxG",
+        "pescidade": "Rio do Sul",
+        "pesestado": "AC"
+    },
+    {
+        "pescodigo": 3,
+        "pesnome": "Renata",
+        "pessobrenome": "Aragão",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$4RGkctgGJn00YLHY2HMQR.cm5MaNQEGNBPyoNVwXrK9bGSqns\/Cq2",
+        "pescidade": "Rio do Sul",
+        "pesestado": "SC"
+    },
+    {
+        "pescodigo": 4,
+        "pesnome": "Ronaldo",
+        "pessobrenome": "Aragão",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$D38VUPxktkXkf0CDt7Fgr.qtGWGu\/9J7Ol4uw377NAjOl03AZMGXy",
+        "pescidade": "Rio do Sul",
+        "pesestado": "SC"
+    },
+    {
+        "pescodigo": 5,
+        "pesnome": "Silvana",
+        "pessobrenome": "Silva",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$kSQO\/o9fI5U0HsK06CTQuOuEMi2lybg6GNxkY9W6Fftx4PQlyLWRy",
+        "pescidade": "Rio do Sul",
+        "pesestado": "SC"
+    },
+    {
+        "pescodigo": 6,
+        "pesnome": "Tuani",
+        "pessobrenome": "Silva",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$knI8KX.Csd7DeMrpF9uhTOWSa9Oav9xyTA0rzVbRdMT9KBOZfJ6o6",
+        "pescidade": "Rio do Sul",
+        "pesestado": "SC"
+    },
+    {
+        "pescodigo": 7,
+        "pesnome": "Jonathan",
+        "pessobrenome": "Lopes",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$Onqjf7jaQj2k7J6qQpyN0es\/fFYP8pU0kt4UtMR3qsbPVBRBNLkIi",
+        "pescidade": "Rio do Sul",
+        "pesestado": "SC"
+    },
+    {
+        "pescodigo": 8,
+        "pesnome": "Thiago",
+        "pessobrenome": "Farias",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$MWnrlX4WvveXLshr2k3YGu8VRxbL9BEOMYf31rKYZe0qljkM6E8rC",
+        "pescidade": "Curitiba",
+        "pesestado": "PR"
+    },
+    {
+        "pescodigo": 9,
+        "pesnome": "João",
+        "pessobrenome": "Cleiton",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$STL4JWec85pTdSSqAUgmOOUCOvRoGPYUmUcpqTyCaYKl57pSID2Im",
+        "pescidade": "Manaus",
+        "pesestado": "AM"
+    },
+    {
+        "pescodigo": 10,
+        "pesnome": "Luísa",
+        "pessobrenome": "Soares",
+        "pesemail": "ana.bastos@unidavi.edu.br",
+        "pespassword": "$2y$10$lKAfe9kkCZyQK3NGb9g1yOWsqBIQiXIIamN3TwhkF2ij9t1AszwOC",
+        "pescidade": "Porto Alegre",
+        "pesestado": "RS"
+    }
+]
