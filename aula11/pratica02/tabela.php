@@ -6,6 +6,8 @@
 
       if ($connection) {
         if ($nomePesquisa != null)  {
+          $nomePesquisa = filter_var($nomePesquisa, FILTER_SANITIZE_STRING);
+          $nomePesquisa = trim($nomePesquisa);
           $resultTable = pg_query_params($connection, "SELECT * FROM tbpessoa WHERE pesnome ILIKE $1", ['%' . $nomePesquisa . '%']); 
         } else {
           $resultTable = pg_query($connection, "SELECT * FROM tbpessoa");
