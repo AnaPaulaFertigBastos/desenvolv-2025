@@ -22,7 +22,7 @@ function divisivelPorDois($valor) : void {
     echo "Resultado: <br>";
 
     if ($resto == 0) {
-      echo "<span>$resto Valor divisível por 2</span>";
+      echo "<span>Valor divisível por 2</span>";
     } 
     else {
       echo "<span>O valor não é divisível por 2</span>";
