@@ -5,8 +5,8 @@
   //Cria instância da classe Pessoa
   $pessoa = new Pessoa();
 
-  $pessoa->nome = "João";
-  $pessoa->sobrenome = "Pereira";
+  $pessoa->setNome("João");
+  $pessoa->setSobrenome("Pereira");
 
   echo $pessoa->getNomeCompleto()
 
