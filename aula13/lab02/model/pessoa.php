@@ -1,87 +1,71 @@
-<?php 
-  class pessoa {
-    private string $nome;
-    private string $sobrenome;
-    private DateTime $dataNascimento;
-    private string $cpfcnpj;
-    private int $tipo;
-    private $telefone;
-    private $endereco;
+<?php
 
-    public function __construct(){
-      $this->tipo = 1;
-      $this->dataNascimento = new DateTime();
-    }
+    class Pessoa {
+        private $nome;
+        private $sobreNome;
+        private $tipo;
+        private $dataNascimento;
+        private $dataInstancia;
+        //Lista de Contatos da Pessoa
+        private $contatos = array();
 
-    public function getNome() {
-      return $this->nome;
-    }
+        public function __construct() {
+            $this->tipo = 1;
+            $this->dataInstancia = new DateTime();
+        }
 
-    public function setNome($nome) {
-      $this->nome = $nome;
-    }
+        public function getDataInstancia() {
+            return $this->dataInstancia->format('d/m/Y H:i:s');
+        }
 
-    public function getSobrenome() {
-      return $this->sobrenome;
-    }
+        public function getIdade() {
+            $dataAtual = new DateTime();
+            $idade = $dataAtual->diff($this->dataNascimento);
+            return $idade->y;
+        }
 
-    public function setSobrenome($sobrenome) {
-      $this->sobrenome = $sobrenome;
-    }
-    
-    public function getDataNascimento() {
-      return $this->dataNascimento;
-    }
+        public function AddContato($contato) {
+            //Adicionar um contato na lista de contatos
+            array_push($this->contatos, $contato);
+        }
 
-    public function setDataNascimento($dataNascimento) {
-      $this->dataNascimento = $dataNascimento;
-    }
+        public function getContatoPeloTipo($tipo) {
+            //Retornar o contato pelo tipo
+            foreach ($this->contatos as $contato) {
+                if ($contato->getTipo() == $tipo) {
+                    return $contato;
+                }
+            }
+            return null;
+        }
 
-    public function getCpfCnpj() {
-      return $this->cpfcnpj;
-    }
+        public function getNomeCompleto() {
+            return $this->nome . " " . $this->sobreNome;
+        }
 
-    public function setCpfCnpj($cpfcnpj) {
-      $this->cpfcnpj = $cpfcnpj;
-    }
+        public function getNome() {
+            return $this->nome;
+        }
 
-    public function getTipo() {
-      return $this->tipo;
-    }
+        public function getSobreNome() {
+            return $this->sobreNome;
+        }
 
-    public function setTipo($tipo) {
-      $this->tipo = $tipo;
-    }
+        public function setNome($nome) {
+            $this->nome = $nome;
+        }
 
-    public function getTelefone() {
-      return $this->telefone;
-    }
+        public function setSobreNome($sobreNome) {
+            $this->sobreNome = $sobreNome;
+        }
 
-    public function setTelefone($telefone) {
-      $this->telefone = $telefone;
-    }
+        public function getDataNascimento() {
+            return $this->dataNascimento;
+        }   
 
-    public function getEndereco() {
-      return $this->endereco;
+        public function setDataNascimento($dataNascimento) {
+            $this->dataNascimento = $dataNascimento;
+        }
     }
-
-    public function setEndereco($endereco) {
-      $this->endereco = $endereco;
-    }
-
-    public function inicializaClasse() : void {
-      $pessoa = new Pessoa();
-    }
-
-    public function getNomeCompleto() {
-      return $this->nome . " " . $this->sobrenome;
-    }
-
-    public function getIdade() : int {
-      $dataAtual = new DateTime();
-      $diferenca = $dataAtual->diff($this->dataNascimento)->y;
-      return $diferenca;
-    }
-  }
 
 ?>
