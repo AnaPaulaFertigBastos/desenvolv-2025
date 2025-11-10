@@ -1,0 +1,104 @@
+[
+    {
+        "nome": "Ana Paula",
+        "sobreNome": "Fertig Bastos",
+        "tipo": 1,
+        "dataNascimento": "2005-11-25",
+        "dataInstancia": "2025-11-10 18:36:52",
+        "contatos": [
+            {
+                "nome": "Email",
+                "valor": "ana.bastos@unidavi.edu.br",
+                "tipo": 1
+            },
+            {
+                "nome": "Telefone",
+                "valor": "+55 11 91234-5678",
+                "tipo": 2
+            }
+        ],
+        "enderecos": [
+            {
+                "logradouro": "Rua das Flores, 123",
+                "bairro": "Jardim Primavera",
+                "cidade": "São Paulo",
+                "estado": "SP",
+                "cep": "01234-567"
+            }
+        ]
+    },
+    {
+        "nome": "Eduardo",
+        "sobreNome": "Fertig Bastos",
+        "tipo": 1,
+        "dataNascimento": "2001-06-09",
+        "dataInstancia": "2025-11-10 18:36:52",
+        "contatos": [
+            {
+                "nome": "Email",
+                "valor": "eduardo@unidavi.edu.br",
+                "tipo": 1
+            },
+            {
+                "nome": "Telefone",
+                "valor": "+55 11 91234-5678",
+                "tipo": 2
+            }
+        ],
+        "enderecos": [
+            {
+                "logradouro": "Rua das Flores, 123",
+                "bairro": "Jardim Primavera",
+                "cidade": "São Paulo",
+                "estado": "SP",
+                "cep": "01234-567"
+            }
+        ]
+    },
+    {
+        "nome": "Fernando",
+        "sobreNome": "Bastos",
+        "tipo": 1,
+        "dataNascimento": "1969-01-26",
+        "dataInstancia": "2025-11-10 18:36:52",
+        "contatos": [
+            {
+                "nome": "Email",
+                "valor": "fernando@unidavi.edu.br",
+                "tipo": 1
+            }
+        ],
+        "enderecos": [
+            {
+                "logradouro": "Rua das Flores, 123",
+                "bairro": "Jardim Primavera",
+                "cidade": "São Paulo",
+                "estado": "SP",
+                "cep": "01234-567"
+            }
+        ]
+    },
+    {
+        "nome": "Maridiani",
+        "sobreNome": "Fertig",
+        "tipo": 1,
+        "dataNascimento": "1973-01-06",
+        "dataInstancia": "2025-11-10 18:36:52",
+        "contatos": [
+            {
+                "nome": "Email",
+                "valor": "maridiani@unidavi.edu.br",
+                "tipo": 1
+            }
+        ],
+        "enderecos": [
+            {
+                "logradouro": "Rua das Flores, 123",
+                "bairro": "Jardim Primavera",
+                "cidade": "São Paulo",
+                "estado": "SP",
+                "cep": "01234-567"
+            }
+        ]
+    }
+]
