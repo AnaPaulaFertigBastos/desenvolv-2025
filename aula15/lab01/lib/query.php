@@ -32,24 +32,15 @@
         }
 
         public function update($stabela, $aColunas, $aValores, $sWhere) {
-
-            // Montar "col1 = $1, col2 = $2, col3 = $3 ..."
-            $set = [];
-            for ($i = 0; $i < count($aColunas); $i++) {
-                $set[] = $aColunas[$i] . " = $" . ($i + 1);
+            for ($iCampo = 1; $iCampo <= count($aColunas); $iCampo++) {
+                $varCol = "$".$iCampo;
             }
 
-            $setSql = implode(", ", $set);
-
-            $sql = "UPDATE $stabela SET $setSql WHERE $sWhere";
-
-            return pg_query_params(
-                $this->connection->getInternalConnection(),
-                $sql,
-                $aValores
-            );
+            $result = pg_query_params($this->connection->getInternalConnection(), 
+                                      "UPDATE " . $stabela . " SET " . $aColunas . " = " . $varCol . " WHERE " . $sWhere, 
+                                      $aValores);
+            return $result;
         }
-
 
         public function insert($sTabela, $aColunas, $aValores) {
             //TODO implementar método de insert
@@ -68,5 +59,3 @@
         }
 
     }
-
-?>
